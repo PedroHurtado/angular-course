@@ -1,0 +1,11 @@
+<form (submit)="handlerSubmit($event)" [formGroup]="profileForm">
+
+  <label for="first-name">First Name: </label>
+  <input id="first-name" type="text" formControlName="firstName">
+  <app-errors></app-errors>
+  <label for="last-name">Last Name: </label>
+  <input id="last-name" type="text" formControlName="lastName">
+  <app-errors></app-errors>
+  <button type="submit">Enviar</button>
+
+</form>
