@@ -10,6 +10,7 @@ import { ForComponent } from './for/for.component';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorsComponent } from './errors/errors.component';
+import { Service } from './form/service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { ErrorsComponent } from './errors/errors.component';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

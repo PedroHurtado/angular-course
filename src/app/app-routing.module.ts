@@ -9,7 +9,8 @@ const routes: Routes = [
  {path:'', component:ParentComponent},
  {path:'if', component:IfComponent},
  {path:'for', component:ForComponent},
- {path:'form', component:FormComponent}
+ {path:'form', component:FormComponent, data:{show:false}},
+ {path:'form/:id', component:FormComponent, data:{show:true}},
 ];
 
 @NgModule({
